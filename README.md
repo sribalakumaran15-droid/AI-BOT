@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StudyAI: AI Student Academic Assistant
 
 StudyAI is a production-style EdTech application with a React/Vite frontend and FastAPI backend. It combines JWT authentication, SQLAlchemy persistence, course discovery, document-grounded chat, quizzes, profile statistics, and a responsive SaaS dashboard.
@@ -93,3 +94,6 @@ npm run build
 ```
 
 The former Streamlit app remains available as `app.py` for reference, but the production-style experience is the React/FastAPI pair described above.
+=======
+# AI-BOT
+>>>>>>> effa3d31a6195d0ba086095744b3e2632f8ce71b
