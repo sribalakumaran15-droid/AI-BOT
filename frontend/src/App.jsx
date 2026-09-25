@@ -1,0 +1,15 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { useAuth } from './context/AuthContext'
+import AppLayout from './components/AppLayout'
+import Landing from './pages/Landing'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Dashboard from './pages/Dashboard'
+import Chat from './pages/Chat'
+import Materials from './pages/Materials'
+import Courses from './pages/Courses'
+import Quiz from './pages/Quiz'
+import Profile from './pages/Profile'
+import Placeholder from './pages/Placeholder'
+function Protected() { const { user } = useAuth(); return user ? <AppLayout/> : <Navigate to="/login" replace/> }
+export default function App() { return <Routes><Route path="/" element={<Landing/>}/><Route path="/login" element={<Login/>}/><Route path="/register" element={<Register/>}/><Route element={<Protected/>}><Route path="/app" element={<Dashboard/>}/><Route path="/app/chat" element={<Chat/>}/><Route path="/app/materials" element={<Materials/>}/><Route path="/app/courses" element={<Courses/>}/><Route path="/app/quiz" element={<Quiz/>}/><Route path="/app/profile" element={<Profile/>}/><Route path="/app/search" element={<Placeholder title="Search" text="Global search across your courses, documents, FAQs, and chat history is ready for your next study session."/>}/><Route path="/app/history" element={<Placeholder title="History" text="Your recent conversations and quiz attempts will appear here."/>}/><Route path="/app/settings" element={<Placeholder title="Settings" text="Manage your account, AI preferences, and workspace configuration."/>}/></Route><Route path="*" element={<Navigate to="/" replace/>}/></Routes> }

@@ -1,0 +1,2 @@
+import { Settings2 } from 'lucide-react'
+export default function Placeholder({title,text}){return <div><div className="page-heading"><div><p className="kicker">WORKSPACE</p><h1>{title}</h1><p>{text}</p></div></div><section className="panel placeholder"><Settings2 size={31}/><h2>Coming together</h2><p>This surface is connected to the same authenticated workspace and ready for the next product slice.</p></section></div>}

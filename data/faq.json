@@ -1,0 +1,8 @@
+[
+  {"question":"What is a stack?","answer":"A stack is a linear data structure that follows LIFO: last in, first out. The main operations are push, pop, and peek."},
+  {"question":"What is a queue?","answer":"A queue follows FIFO: first in, first out. Items are added at the rear and removed from the front, like people waiting in a line."},
+  {"question":"What is machine learning?","answer":"Machine learning allows a computer to learn patterns from examples and use them to make predictions or decisions."},
+  {"question":"What is normalization?","answer":"Normalization is a database design process that reduces duplicate data and prevents insertion, update, and deletion anomalies."},
+  {"question":"What is an operating system?","answer":"An operating system manages hardware resources and provides common services for application programs, such as files, memory, processes, and devices."},
+  {"question":"What is recursion?","answer":"Recursion is a technique where a function solves a problem by calling itself on a smaller version of the problem, stopping at a base case."}
+]
